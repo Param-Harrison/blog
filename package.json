@@ -37,6 +37,7 @@
   "devDependencies": {
     "eslint": "^5.12.1",
     "eslint-plugin-react": "^7.12.4",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.16.1"
   },
   "homepage": "https://github.com/paramlabs/LearnWithParam#readme",
@@ -56,6 +57,7 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "format": "prettier --trailing-comma es5 --semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "start": "gatsby develop -p 4040",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "deploy:github": "npm run build && node ./scripts/deploy-github"
   }
 }
