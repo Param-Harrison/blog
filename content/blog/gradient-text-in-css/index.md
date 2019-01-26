@@ -21,7 +21,7 @@ One such aspect is styling text with gradient color. Let see it in action
 #### Browser compatibility
 
 - This is only supported in webkit based browsers, for other browsers, color property can be the fallback option to render color related to the gradient color.
-- `-webkit-text-fill-color` is a non standard CSS, have fallback color always to support every browser
+- `-webkit-text-fill-color` is a non standard CSS, so have fallback color property to support every browser without causing accessibility issues on non supported browsers
 
 #### Check out this solution in codepen
 
