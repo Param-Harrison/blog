@@ -7,6 +7,6 @@ ghPages.publish(
     repo: 'git@github.com:paramlabs/paramlabs.github.io.git',
   },
   () => {
-    console.log('Deploy Complete!')
+    console.log('Deploy Complete!');
   }
 );
