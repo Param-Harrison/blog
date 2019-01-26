@@ -1,6 +1,6 @@
 ---
 title: Center align content vertically and horizontally in CSS
-date: '2019-01-04T22:12:03.284Z'
+date: '2019-01-05T08:12:03.284Z'
 ---
 
 Center aligning content are usual need in development. There are several ways to achieve it depends on the use cases.
