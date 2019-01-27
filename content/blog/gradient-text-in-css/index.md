@@ -2,6 +2,7 @@
 title: Gradient text in CSS
 date: '2019-01-12T09:24:16.132Z'
 published: true
+tags: ['CSS Nuggets']
 ---
 
 Gradient backgrounds started the trend, nowadays companies have more gradient colors for many elements after gradient become widely supported on modern browsers.
