@@ -56,4 +56,11 @@ This approach works on almost every use cases perfectly
 - non fixed width of content block ✅
 - content can be inline level element or block level element ✅
 
+#### some of the practical use cases in UI
+
+- Modals
+- Hero Header section (jumbotron section)
+- Video background with content
+- Cards with unequal heights and centrally aligned content
+
 Flexbox is so powerful and you can easily develop more styles and components using it. Its supported on all major browsers, no excuse to not use it 😊
