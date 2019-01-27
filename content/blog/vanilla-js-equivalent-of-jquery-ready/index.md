@@ -12,12 +12,13 @@ Document ready function is the starting point for browser javascript for more th
 ```javascript
 // Longer version in jQuery
 $(document).ready(function () {
-    // Your JS for DOM manipulation
+    // DOM events and DOM manipulations
 });
-// ---------- OR -----------
+```
+
+```javascript
 // Shorter version in jQuery
 $(function () {
-    // DOM events and DOM manipulation
 });
 ```
 
