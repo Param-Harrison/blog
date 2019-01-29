@@ -57,7 +57,6 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "format": "prettier --trailing-comma es5 --semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "start": "gatsby develop -p 4040",
-    "build": "gatsby build",
-    "deploy:github": "npm run build && node ./scripts/deploy-github"
+    "build": "gatsby build"
   }
 }
