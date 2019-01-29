@@ -1,6 +1,7 @@
 import Typography from 'typography';
 import oceanBeachTheme from 'typography-theme-ocean-beach';
 
+delete oceanBeachTheme.googleFonts;
 const typography = new Typography(oceanBeachTheme);
 
 // Hot reload typography in development.
