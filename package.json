@@ -40,11 +40,12 @@
     "gh-pages": "^2.0.1",
     "prettier": "^1.16.1"
   },
-  "homepage": "https://github.com/paramlabs/LearnWithParam#readme",
+  "homepage": "https://learnwithparam.com/",
   "keywords": [
     "gatsby",
     "PWA",
-    "Personal Blog"
+    "Personal Blog",
+    "Learn with Param"
   ],
   "license": "MIT",
   "main": "N/A",
@@ -54,8 +55,6 @@
   },
   "scripts": {
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "format": "prettier --trailing-comma es5 --semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "start": "gatsby develop -p 4040",
     "build": "gatsby build"
   }
