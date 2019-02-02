@@ -31,10 +31,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who loves to code, teach and learn new things in tech business.
-              {` `}
+              Written by <strong>{author}</strong> who loves to code, teach and learn new things in tech business. 
+              You should {` `}
               <a target="_blank" rel="noopener" href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+                follow him on Twitter
               </a>
             </p>
           </div>

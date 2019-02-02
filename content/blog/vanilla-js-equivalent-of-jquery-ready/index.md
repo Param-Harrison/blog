@@ -19,6 +19,7 @@ $(document).ready(function () {
 ```javascript
 // Shorter version in jQuery
 $(function () {
+    // DOM events and DOM manipulations
 });
 ```
 
