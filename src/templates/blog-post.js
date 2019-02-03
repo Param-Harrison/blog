@@ -15,17 +15,20 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <h1>{post.frontmatter.title}</h1>
-        <p
+        <h1>
+          {post.frontmatter.title}
+        </h1>
+        <small
           style={{
             ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginTop: rhythm(-0.6),
+            color: `#aaaaaa`,
           }}
         >
           {post.frontmatter.date}
-        </p>
+        </small>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{

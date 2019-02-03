@@ -3,7 +3,7 @@ module.exports = {
     title: `Learn with Param`,
     author: `Param Harrison`,
     description: `Sharing my knowledge on Product and Engineering`,
-    siteUrl: `https://paramlabs.github.io/`,
+    siteUrl: `https://learnwithparam.com`,
     social: {
       twitter: `jacknapes`,
     },
