@@ -7,14 +7,14 @@ tags: ['JS Nuggets']
 
 Most of the modern web frameworks handle loading subsequent pages faster by different techniques like code splitting, front end caching, service workers etc.
 
-Some of the other common techniques to boost site speed agnostic to framework are,
+Some other common techniques to boost site speed are,
 
 - pre-fetching assets for next pages during idle time
 - pre-load next urls and cache it
 
-Several companies like `medium`, `wikipedia`, `quora`, `dev.to` loads their pages faster using similar techniques.
+Several companies like `medium`, `wikipedia`, `dev.to`, `quora` loads their pages faster using similar techniques.
 
-This technique do have benefits for the end users, it also have cons if there is no smartness in predicting what user visit next and loads every links on the page.
+These technique require lot of smartness based on user's settings, device and network speed etc.
 
 ## Introducing Quicklink
 
@@ -27,8 +27,7 @@ A small javascript library (< 1Kb) which makes the subsequent page load faster a
 - It won't load these techniques if user is on slow connection (using `navigator.connection.effectiveType`) and if user opt in for saving data in mobile devices (using `navigator.connection.saveData`)
 - It won't interrupt the site content, it start its operation only on Idle-time (using `requestIdleCallback`)
 
-
-Check the docs here for more info on the library. It was open sourced by Google chrome labs
+Check out the docs here for more info on the library. It is open sourced by Google chrome labs
 
 - https://github.com/GoogleChromeLabs/quicklink
 
@@ -54,14 +53,14 @@ quicklink();
 
 quicklink accepts lot of options, You can find it in documentation in the [github link](https://github.com/GoogleChromeLabs/quicklink).
 
-Ignoring some URL patterns are the mostly used options, most other options have optimized default but URL's to be ignored are specific to the site.
+Ignoring few URL's are the widely used option, most other options have default values.
 
-Example for ignoring all URL with extensions `.pdf`, URL with sub-string `/api` and also links which explicitly asked to `noprefetch`
+Example, for ignoring all URL with extensions `.pdf`, URL with sub-string `/api` and also links which explicitly asked to `noprefetch`
 
 ```javascript
 quicklink({
   ignores: [
-    // ignore all /api/**/* urls
+    // ignore all /api/* urls
     /\/api\/?/,
     // ignore .pdf files
     uri => uri.includes('.pdf'),
@@ -70,5 +69,7 @@ quicklink({
   ]
 });
 ```
+
+Quicklink is easy to setup and smart enough for most cases to optimize subsequent page load experience. It doesn't solve the first load experience though.
 
 Hope it improves the performance of your website and improves the user experience. Try it out, its one exciting library to test web performance for users.
