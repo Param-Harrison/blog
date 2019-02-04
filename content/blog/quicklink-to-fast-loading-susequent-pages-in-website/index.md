@@ -1,5 +1,5 @@
 ---
-title: Quicklink - a small JS library to improve your user experience on websites
+title: Quicklink - a small JS library to fast load subsequent pages and improve user experience
 date: '2019-02-02T20:16:58.052Z'
 published: true
 tags: ['JS Nuggets']

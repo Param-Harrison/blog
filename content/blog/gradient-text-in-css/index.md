@@ -1,5 +1,5 @@
 ---
-title: Gradient text in CSS
+title: Gradient text style using CSS
 date: '2019-01-12T09:24:16.132Z'
 published: true
 tags: ['CSS Nuggets']
