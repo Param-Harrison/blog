@@ -5,7 +5,7 @@ module.exports = {
     description: `Sharing my knowledge on Product and Engineering`,
     siteUrl: `https://learnwithparam.com`,
     social: {
-      twitter: `jacknapes`,
+      twitter: `Jacknapes`,
     },
   },
   plugins: [
