@@ -7,6 +7,18 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props;
     const rootPath = `${__PATH_PREFIX__}/`;
+    const headerStyle = {
+      marginTop: 0,
+      color: `#950451`,
+      fontFamily: `'Merienda', cursive`,
+      fontWeight: `normal`,
+    };
+    const linkStyle = {
+      boxShadow: `none`,
+      textDecoration: `none`,
+      color: `inherit`,
+      backgroundImage: `none`,
+    };
     let header;
 
     if (location.pathname === rootPath) {
@@ -15,19 +27,11 @@ class Layout extends React.Component {
           style={{
             ...scale(1.2),
             marginBottom: rhythm(1.5),
-            marginTop: 0,
-            color: `#950451`,
-            fontFamily: `Pacifico, handwriting`,
-            fontWeight: `normal`,
+            ...headerStyle,
           }}
         >
           <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-              backgroundImage: `none`,
-            }}
+            style={linkStyle}
             to={`/`}
           >
             {title}
@@ -38,20 +42,13 @@ class Layout extends React.Component {
       header = (
         <h2
           style={{
-            marginTop: 0,
+            ...scale(1),
             marginBottom: 0,
-            color: `#950451`,
-            fontFamily: `Pacifico, handwriting`,
-            fontWeight: `normal`,
+            ...headerStyle,
           }}
         >
           <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-              backgroundImage: `none`,
-            }}
+            style={linkStyle}
             to={`/`}
           >
             {title}
