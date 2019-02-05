@@ -36,7 +36,7 @@ const socialStyle = {
 
 const SocialShare = ({ social, config, tags }) => (
   <section>
-    <h4>If you like this article, share and spread the words</h4>
+    <h4>If you like this article, share and spread the word</h4>
     <FacebookShareButton
       url={config.url}
       style={{
