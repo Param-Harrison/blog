@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Bio from '../components/Bio';
+import SocialShare from '../components/SocialShare';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import { rhythm, scale } from '../utils/typography';
@@ -10,14 +11,13 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = this.props.data.site.siteMetadata.title;
+    const { siteUrl, social } = this.props.data.site.siteMetadata;
     const { previous, next } = this.props.pageContext;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <h1>
-          {post.frontmatter.title}
-        </h1>
+        <h1>{post.frontmatter.title}</h1>
         <small
           style={{
             ...scale(-1 / 5),
@@ -30,6 +30,14 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </small>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <SocialShare
+          social={social}
+          config={{
+            url: `${siteUrl}${post.fields.slug}`,
+            title: post.frontmatter.title,
+          }}
+          tags={post.frontmatter.tags}
+        />
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -74,15 +82,23 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
+        social {
+          twitter
+        }
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
       }
     }
   }

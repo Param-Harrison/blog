@@ -8,6 +8,10 @@
     "url": "https://github.com/paramlabs/LearnWithParam/issues"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.14",
+    "@fortawesome/free-brands-svg-icons": "^5.7.1",
+    "@fortawesome/free-solid-svg-icons": "^5.7.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@weknow/gatsby-remark-codepen": "^0.1.0",
     "gatsby": "^2.0.93",
     "gatsby-image": "^2.0.27",
@@ -30,6 +34,7 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-share": "^2.4.0",
     "react-typography": "^0.16.13",
     "typeface-merienda": "0.0.71",
     "typeface-roboto": "0.0.54",
