@@ -31,11 +31,12 @@ const socialStyle = {
   border: `2px solid`,
   borderRadius: `50%`,
   marginRight: `0.5rem`,
-  marginBottom: `1rem`,
+  marginBottom: `2rem`,
 };
 
 const SocialShare = ({ social, config, tags }) => (
-  <section className="post-social">
+  <section>
+    <h4>If you like this article, share and spread the words</h4>
     <FacebookShareButton
       url={config.url}
       style={{
