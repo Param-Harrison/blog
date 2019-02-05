@@ -14,7 +14,7 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              marginBottom: rhythm(1.5),
             }}
           >
             <Image
@@ -31,9 +31,13 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who loves to code, teach and learn new things in tech business. 
-              You should {` `}
-              <a target="_blank" rel="noopener" href={`https://twitter.com/${social.twitter}`}>
+              Written by <strong>{author}</strong> who loves to code, teach and
+              learn new things in tech business. You should {` `}
+              <a
+                target="_blank"
+                rel="noopener"
+                href={`https://twitter.com/${social.twitter}`}
+              >
                 follow him on Twitter
               </a>
             </p>

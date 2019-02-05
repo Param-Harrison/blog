@@ -2,6 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+  faFacebookF,
+  faTwitter,
+  faWhatsapp,
+  faRedditAlien,
+  faLinkedinIn,
+} from '@fortawesome/free-brands-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
   FacebookShareButton,
   LinkedinShareButton,
   TwitterShareButton,
@@ -9,58 +17,75 @@ import {
   RedditShareButton,
 } from 'react-share';
 
+library.add(faFacebookF, faTwitter, faLinkedinIn, faWhatsapp, faRedditAlien);
+
+const socialStyle = {
+  boxShadow: `none`,
+  display: `inline-flex`,
+  fontSize: `1rem`,
+  cursor: `pointer`,
+  width: `2rem`,
+  height: `2rem`,
+  justifyContent: `center`,
+  alignItems: `center`,
+  border: `2px solid`,
+  borderRadius: `50%`,
+  marginRight: `0.5rem`,
+  marginBottom: `1rem`,
+};
+
 const SocialShare = ({ social, config, tags }) => (
   <section className="post-social">
     <FacebookShareButton
       url={config.url}
-      className="button is-outlined is-rounded facebook"
+      style={{
+        ...socialStyle,
+        color: `#3b5998`,
+      }}
     >
-      <span className="icon">
-        <FontAwesomeIcon icon={['fab', 'facebook-f']} />
-      </span>
-      <span className="text">Facebook</span>
+      <FontAwesomeIcon icon={faFacebookF} />
     </FacebookShareButton>
     <TwitterShareButton
       url={config.url}
-      className="button is-outlined is-rounded twitter"
       title={config.title}
       via={social.twitter.split('@').join('')}
       hashtags={tags}
+      style={{
+        ...socialStyle,
+        color: `#1da1f2`,
+      }}
     >
-      <span className="icon">
-        <FontAwesomeIcon icon={['fab', 'twitter']} />
-      </span>
-      <span className="text">Twitter</span>
+      <FontAwesomeIcon icon={faTwitter} />
     </TwitterShareButton>
     <LinkedinShareButton
       url={config.url}
-      className="button is-outlined is-rounded linkedin"
       title={config.title}
+      style={{
+        ...socialStyle,
+        color: `#0077b5`,
+      }}
     >
-      <span className="icon">
-        <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
-      </span>
-      <span className="text">LinkedIn</span>
+      <FontAwesomeIcon icon={faLinkedinIn} />
     </LinkedinShareButton>
     <RedditShareButton
       url={config.url}
-      className="button is-outlined is-rounded reddit"
       title={config.title}
+      style={{
+        ...socialStyle,
+        color: `#ff4500`,
+      }}
     >
-      <span className="icon">
-        <FontAwesomeIcon icon={['fab', 'reddit-alien']} />
-      </span>
-      <span className="text">Reddit</span>
+      <FontAwesomeIcon icon={faRedditAlien} />
     </RedditShareButton>
     <WhatsappShareButton
       url={config.url}
-      className="button is-outlined is-rounded whatsapp"
       title={config.title}
+      style={{
+        ...socialStyle,
+        color: `#128c7e`,
+      }}
     >
-      <span className="icon">
-        <FontAwesomeIcon icon={['fab', 'whatsapp']} />
-      </span>
-      <span className="text">WhatsApp</span>
+      <FontAwesomeIcon icon={faWhatsapp} />
     </WhatsappShareButton>
   </section>
 );
