@@ -2,7 +2,7 @@
 title: Quicklink - a small JS library to fast load subsequent pages and improve user experience
 date: '2019-02-02T20:16:58.052Z'
 published: true
-tags: ['JS Nuggets']
+tags: ['JS Nuggets', 'Site Performance']
 ---
 
 Most of the modern web frameworks handle loading subsequent pages faster by different techniques like code splitting, front end caching, service workers etc.
@@ -35,7 +35,7 @@ Check out the docs here for more info on the library. It is open sourced by Goog
 
 ```javascript
 // ES6 way
-import quicklink from "quicklink/dist/quicklink.mjs";
+import quicklink from 'quicklink/dist/quicklink.mjs';
 quicklink();
 ```
 
@@ -43,11 +43,11 @@ quicklink();
 <!-- Include as script -->
 <script src="dist/quicklink.umd.js"></script>
 <script>
-    /*
+  /*
         you can load the script DOMContentLoaded, or Window load callbacks,
         it won't cause any issues, since quicklink start executing only in browser idle time.
     */
-    quicklink();
+  quicklink();
 </script>
 ```
 
@@ -65,8 +65,8 @@ quicklink({
     // ignore .pdf files
     uri => uri.includes('.pdf'),
     // ignore all links, scripts which has explicit noprefetch
-    (uri, elem) => elem.hasAttribute('noprefetch')
-  ]
+    (uri, elem) => elem.hasAttribute('noprefetch'),
+  ],
 });
 ```
 

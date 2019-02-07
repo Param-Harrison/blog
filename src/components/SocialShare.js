@@ -34,6 +34,17 @@ const socialStyle = {
   marginBottom: `2rem`,
 };
 
+const slugify = text => {
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+};
+
 const SocialShare = ({ social, config, tags }) => (
   <section>
     <h4>If you like this article, share and spread the word</h4>
@@ -50,7 +61,9 @@ const SocialShare = ({ social, config, tags }) => (
       url={config.url}
       title={config.title}
       via={social.twitter.split('@').join('')}
-      hashtags={tags}
+      hashtags={tags.map(tag => {
+        return slugify(tag);
+      })}
       style={{
         ...socialStyle,
         color: `#1da1f2`,
