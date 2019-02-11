@@ -2,7 +2,7 @@
 title: Quicklink - a small JS library to fast load subsequent pages and improve user experience
 date: '2019-02-02T20:16:58.052Z'
 published: true
-tags: ['JS Nuggets', 'Site Performance']
+tags: ['JS Nuggets', 'Site Performance', 'Hacks & Tricks']
 ---
 
 Most of the modern web frameworks handle loading subsequent pages faster by different techniques like code splitting, front end caching, service workers etc.
