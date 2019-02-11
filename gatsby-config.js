@@ -24,6 +24,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-emotion`,
+      options: {
+        // Accepts all options defined by `babel-plugin-emotion` plugin.
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -43,12 +49,12 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           {
-            resolve:`@weknow/gatsby-remark-codepen`,
+            resolve: `@weknow/gatsby-remark-codepen`,
             options: {
               theme: `default`,
-              height: 400
-            }
-          }
+              height: 400,
+            },
+          },
         ],
       },
     },
@@ -82,4 +88,4 @@ module.exports = {
       },
     },
   ],
-}
+};
