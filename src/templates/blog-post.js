@@ -16,9 +16,8 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title;
     const { siteUrl, social } = this.props.data.site.siteMetadata;
     const { previous, next } = this.props.pageContext;
-    const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content/blog${
-      post.fields.slug
-    }index.md`;
+    const slug = post.fields.slug;
+    const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content/blog${slug}index.md`;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -44,7 +43,7 @@ class BlogPostTemplate extends React.Component {
         <SocialShare
           social={social}
           config={{
-            url: `${siteUrl}${post.fields.slug}`,
+            url: `${siteUrl}${slug}`,
             title: post.frontmatter.title,
           }}
           tags={post.frontmatter.tags}
