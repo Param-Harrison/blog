@@ -7,12 +7,17 @@ import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import { rhythm, scale } from '../utils/typography';
 
+const GITHUB_USERNAME = 'paramlabs';
+const GITHUB_REPO_NAME = 'LearnWithParam';
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = this.props.data.site.siteMetadata.title;
     const { siteUrl, social } = this.props.data.site.siteMetadata;
     const { previous, next } = this.props.pageContext;
+    const slug = post.fields.slug;
+    const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content/blog${slug}index.md`;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -30,10 +35,15 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </small>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        <a href={editUrl} target="_blank" rel="noopener noreferrer">
+          Edit on GitHub
+        </a>
+
         <SocialShare
           social={social}
           config={{
-            url: `${siteUrl}${post.fields.slug}`,
+            url: `${siteUrl}${slug}`,
             title: post.frontmatter.title,
           }}
           tags={post.frontmatter.tags}
