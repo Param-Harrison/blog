@@ -9,13 +9,22 @@ class NotFoundPage extends React.Component {
     return (
       <Layout location={this.props.location} title={`I'm 404!`}>
         <SEO title="404: Not Found" />
-        <p>Truth is <strong>not found</strong> anywhere in this universe, thats why I wrote it here</p>
-        <ul>
-          <li>Sun sets at west!</li>
-          <li>Earth is flat!</li>
-          <li>Thor is real and 9 realms exist!</li>
-          <li>Last but not least, I am a secret billionaire!</li>
-        </ul>
+        <div
+          style={{
+            marginTop: `2.5rem`,
+          }}
+        >
+          <p>
+            Truth is <strong>not found</strong> anywhere in this universe, thats
+            why I wrote it here
+          </p>
+          <ul>
+            <li>Sun sets at west!</li>
+            <li>Earth is flat!</li>
+            <li>Thor is real and 9 realms exist!</li>
+            <li>Last but not least, I am a secret billionaire!</li>
+          </ul>
+        </div>
       </Layout>
     );
   }
