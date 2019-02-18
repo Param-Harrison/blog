@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Learn with Param`,
+    title: `Learn with { Param }`,
     author: `Param Harrison`,
     description: `Sharing my knowledge on Product and Engineering`,
     siteUrl: `https://learnwithparam.com`,

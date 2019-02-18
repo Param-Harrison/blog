@@ -30,7 +30,11 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
+            <p
+              style={{
+                marginBottom: rhythm(0.5),
+              }}
+            >
               Written by <strong>{author}</strong> who loves to code, teach and
               learn new things in tech business. You should {` `}
               <a

@@ -7,48 +7,39 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props;
     const rootPath = `${__PATH_PREFIX__}/`;
-    const headerStyle = {
-      marginTop: 0,
-      color: `#950451`,
-      fontWeight: `normal`,
-    };
+
     const linkStyle = {
       boxShadow: `none`,
       textDecoration: `none`,
       color: `inherit`,
       backgroundImage: `none`,
     };
-    let header;
+    let HeaderTag = 'h1';
+    let headerStyle = {
+      ...scale(0.8),
+      marginTop: 0,
+      marginBottom: rhythm(0),
+      color: `#950451`,
+    };
 
     if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.2),
-            marginBottom: rhythm(1.5),
-            ...headerStyle,
-          }}
-        >
-          <Link style={linkStyle} to={`/`}>
-            {title}
-          </Link>
-        </h1>
-      );
+      headerStyle.marginBottom = rhythm(1.5);
     } else {
-      header = (
-        <h2
-          style={{
-            ...scale(1),
-            marginBottom: 0,
-            ...headerStyle,
-          }}
-        >
-          <Link style={linkStyle} to={`/`}>
-            {title}
-          </Link>
-        </h2>
-      );
+      HeaderTag = 'h2';
     }
+    const header = (
+      <HeaderTag
+        style={{
+          marginBottom: rhythm(1.5),
+          ...headerStyle,
+        }}
+      >
+        <Link style={linkStyle} to={`/`}>
+          {title}
+        </Link>
+      </HeaderTag>
+    );
+
     return (
       <div
         style={{
