@@ -10,7 +10,6 @@ class Layout extends React.Component {
     const headerStyle = {
       marginTop: 0,
       color: `#950451`,
-      fontFamily: `'Merienda', cursive`,
       fontWeight: `normal`,
     };
     const linkStyle = {
@@ -30,10 +29,7 @@ class Layout extends React.Component {
             ...headerStyle,
           }}
         >
-          <Link
-            style={linkStyle}
-            to={`/`}
-          >
+          <Link style={linkStyle} to={`/`}>
             {title}
           </Link>
         </h1>
@@ -47,10 +43,7 @@ class Layout extends React.Component {
             ...headerStyle,
           }}
         >
-          <Link
-            style={linkStyle}
-            to={`/`}
-          >
+          <Link style={linkStyle} to={`/`}>
             {title}
           </Link>
         </h2>
