@@ -22,7 +22,7 @@ class Footer extends React.Component {
         >
           twitter
         </a>{' '}
-        &bull;{' '}
+        |{' '}
         <a
           href="https://github.com/Param-Harrison"
           target="_blank"
@@ -30,7 +30,7 @@ class Footer extends React.Component {
         >
           github
         </a>{' '}
-        &bull;{' '}
+        |{' '}
         <a
           href="https://www.linkedin.com/in/paramanantham/"
           target="_blank"
