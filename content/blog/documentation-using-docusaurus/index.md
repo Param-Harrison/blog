@@ -1,5 +1,5 @@
 ---
-title: Maintaining centralized documentation using docusaurus
+title: Maintaining centralized documentation using Docusaurus
 date: '2019-02-24T03:14:18.056Z'
 published: true
 tags: ['Open Source', 'Hacks & Tricks']
