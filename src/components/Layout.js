@@ -16,7 +16,7 @@ class Layout extends React.Component {
     };
     let HeaderTag = 'h1';
     let headerStyle = {
-      ...scale(0.8),
+      ...scale(0.7),
       marginTop: 0,
       marginBottom: rhythm(0),
       color: `#950451`,
