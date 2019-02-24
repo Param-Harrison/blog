@@ -29,4 +29,8 @@ ncu
 - `ncu -a` - this upgrade the package.json with all version changes including major (Use with CAUTION!)
 - `ncu` - without any option just list down the new versions available. Similar to `npm outdated`.
 
+##### Useful Links
+
+- [NPM check Updates](https://github.com/tjunnone/npm-check-updates)
+
 Hope this helps 😊
