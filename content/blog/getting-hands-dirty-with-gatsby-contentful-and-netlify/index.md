@@ -2,7 +2,7 @@
 title: First hand experience with Gatsby, Contentful and Netlify
 date: '2019-03-02T04:24:53.008Z'
 published: true
-tags: ['Tech Platforms']
+tags: ['Tech Platforms', 'Gatsby', 'Contentful', 'Netlify']
 ---
 
 Last week I tried checking different platform around Gatsby. I am grateful that I did it.
