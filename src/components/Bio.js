@@ -21,6 +21,7 @@ function Bio() {
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
               style={{
+                marginTop: rhythm(1 / 3),
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
                 minWidth: 50,
@@ -44,8 +45,7 @@ function Bio() {
                 href={`https://twitter.com/${social.twitter}`}
               >
                 Follow me on Twitter
-              </a>{' '}
-              to learn about what I read and come across everyday.
+              </a>
             </p>
           </div>
         );
