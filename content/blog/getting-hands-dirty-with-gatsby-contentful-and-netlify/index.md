@@ -58,3 +58,5 @@ This site is hosted in netlify. One of the best way to connect and deploy automa
 - Other features through netlify is also great for starters and have plans to pay as you grow
 
 I didn't come across much challenges yet in netlify. I am a basic user with few static site hosted in netlify. I will write more about their features when I get my hand on it soon 😎
+
+> Note: I have written this based on what I have tried with contentful CMS, Gatsby, I might not have the need to test all the features. I only test what I need for my application's feature. Every tool has its own purpose and audience. Choose it wisely based on your need.

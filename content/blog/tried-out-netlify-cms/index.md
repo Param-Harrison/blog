@@ -1,6 +1,6 @@
 ---
 title: First hand experience with Netlify CMS
-date: '2019-03-03T14:36:33.109Z'
+date: '2019-03-05T14:36:33.109Z'
 published: false
 tags: ['Tech Platforms']
 ---
@@ -22,3 +22,5 @@ I used it along with Gatsby project.
 - It will be a difficult to manage the automated commits if you have multiple authors, editors and developers working on same repository. Works well for single user blogs and small companies content management. But surely needs more feature to support large content needs.
 
 Again, use cases depends on the need of the end user. Netlify CMS is surely better than writing files on your own. Its a toy / pet open source to get started with CMS, but not feature rich to use it for full fledged company needs 😎
+
+> Note: I have written this based on what I have tried with Netlify CMS, I might not have the need to test all the features. I only test what I need for my application's feature. Every tool has its own purpose and audience. Choose it wisely based on your need.
