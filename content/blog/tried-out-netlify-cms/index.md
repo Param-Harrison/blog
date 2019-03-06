@@ -1,5 +1,5 @@
 ---
-title: First hand experience with Netlify CMS
+title: Tried out Netlify CMS with my Gatsby blog
 date: '2019-03-05T14:36:33.109Z'
 published: true
 tags: ['Tech Platforms', 'Netlify CMS']
