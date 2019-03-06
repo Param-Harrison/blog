@@ -1,7 +1,7 @@
 ---
 title: First hand experience with Netlify CMS
 date: '2019-03-05T14:36:33.109Z'
-published: false
+published: true
 tags: ['Tech Platforms']
 ---
 
